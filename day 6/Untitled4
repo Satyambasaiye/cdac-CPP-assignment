@@ -1,0 +1,29 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class Student
+{
+	protected:
+		int rollno;
+		string age,name;
+	public:
+		Student(int rollno,string age,string name)
+		{
+			this->age=age;
+			this->name=name;
+			this->rollno=rollno;
+		}
+		void display()
+		{
+			cout<<age<<" "<<rollno<<" "<<name;
+		}
+		
+}
+int main()
+{
+	Student s(2,21,"satyam");
+	s.display();
+	
+	return 0;
+}
